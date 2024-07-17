@@ -11,23 +11,34 @@
 }
 
 .mobileLinks{
-    position: absolute;
-    top: 100px;
-    right: 0;
-    background-color: blueviolet;
-    width: 50%;
-    height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    /* overflow: hidden;
-    transition: ; */
+    display: none;
+}
+
+.menuButton{
+    display: none;
 }
 
 @media (max-width:770px) {
     .links {
         display: none;
+    }
+    .mobileLinks{
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: blueviolet;
+        width: 50%;
+        height: calc(100vh - 100px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        /* overflow: hidden;
+        transition: ; */
+    }
+    .menuButton{
+        display: block;
+        cursor: pointer;
     }
 }

@@ -31,7 +31,7 @@ const Links = () => {
           <NavLink href="/login" name="login" />
         )}
       </div>
-      <button onClick={()=>setOpen(!open)}>Menu</button>
+      <button className={style.menuButton} onClick={()=>setOpen(!open)}>Menu</button>
       {open && (
         <div className={style.mobileLinks}>
           {links.map((link, index) => (
